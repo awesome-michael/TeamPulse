@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //If there's not already a user id GUID assigned, store one
-        if ConfigManager.userId() == nil {
-            ConfigManager.setUserId(userId: UUID().uuidString)
-        }
+//        if ConfigManager.userId() == nil {
+//            ConfigManager.setUserId(userId: UUID().uuidString)
+//        }
         
         let _ = HealthDataManager.sharedInstance.initialize()
         

@@ -23,8 +23,17 @@ class ConfigManager {
         return UserDefaults.standard.string(forKey: "userId")
     }
     
-    class func setUserId(userId: String) {
+    class func setUserId(userId: String?) {
         UserDefaults.standard.setValue(userId, forKey: "userId")
+        UserDefaults.standard.synchronize()
+    }
+    
+    class func password() -> String? {
+        return UserDefaults.standard.string(forKey: "password")
+    }
+    
+    class func setPassword(password: String?) {
+        UserDefaults.standard.setValue(password, forKey: "password")
         UserDefaults.standard.synchronize()
     }
     
@@ -37,6 +46,15 @@ class ConfigManager {
         UserDefaults.standard.synchronize()
     }
     
+    class func certificatePassword() -> String? {
+        return UserDefaults.standard.string(forKey: "certificatePassword")
+    }
+    
+    class func setCertificatePassword(password: String?) {
+        UserDefaults.standard.setValue(password, forKey: "certificatePassword")
+        UserDefaults.standard.synchronize()
+    }
+    
     class func loadedCertificateId() -> String? {
         return UserDefaults.standard.string(forKey: "certificateId")
     }
@@ -46,12 +64,30 @@ class ConfigManager {
         UserDefaults.standard.synchronize()
     }
     
-    class func awsEndpointId() -> String {
-        return UserDefaults.standard.string(forKey: "awsEndpointId") ?? ""
+    class func iotEndpointHostname() -> String {
+        return UserDefaults.standard.string(forKey: "iotEndpointHostname") ?? ""
     }
     
-    class func setAWSEndpointId(id: String) {
-        UserDefaults.standard.setValue(id, forKey: "awsEndpointId")
+    class func setIoTEndpointHostname(hostname: String) {
+        UserDefaults.standard.setValue(hostname, forKey: "iotEndpointHostname")
+        UserDefaults.standard.synchronize()
+    }
+    
+    class func iotEndpointPort() -> UInt16 {
+        return UInt16(UserDefaults.standard.integer(forKey: "iotEndpointPort") )
+    }
+    
+    class func setIoTEndpointPort(port: UInt16) {
+        UserDefaults.standard.setValue(port, forKey: "iotEndpointPort")
+        UserDefaults.standard.synchronize()
+    }
+    
+    class func deviceId() -> String {
+        return UserDefaults.standard.string(forKey: "deviceId") ?? ""
+    }
+    
+    class func setDeviceId(deviceId: String) {
+        UserDefaults.standard.setValue(deviceId, forKey: "deviceId")
         UserDefaults.standard.synchronize()
     }
 }

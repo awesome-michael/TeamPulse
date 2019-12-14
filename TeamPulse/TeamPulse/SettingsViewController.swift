@@ -10,12 +10,15 @@ import UIKit
 
 class SettingsViewController: UITableViewController, UITextFieldDelegate {
 
-    @IBOutlet var userNameTextField: UITextField!
-    @IBOutlet var userIdLabel: UILabel!
-    @IBOutlet var certificateFileName: UILabel!
     @IBOutlet var authorizeHealthDataLabel: UILabel!
+    
+    @IBOutlet var userNameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var userId: UILabel!
+    @IBOutlet var iotEndpointHostname: UITextField!
+    @IBOutlet var iotEndpointPort: UITextField!
+    @IBOutlet var certificateFileName: UILabel!
     @IBOutlet var heartRateLabel: UILabel!
-    @IBOutlet var awsEndpointIdTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +29,32 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        userNameTextField.text = ConfigManager.userName()
-        userIdLabel.text = ConfigManager.userId()
-        certificateFileName.text = ConfigManager.certificateFileName()
-        heartRateLabel.text = "--"
-        awsEndpointIdTextField.text = ConfigManager.awsEndpointId()
-    }
-
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField == userNameTextField {
-            ConfigManager.setUserName(userName: userNameTextField.text)
-        } else if textField == awsEndpointIdTextField {
-            ConfigManager.setAWSEndpointId(id: awsEndpointIdTextField.text ?? "")
+        // create user id if there is none
+        if ConfigManager.userId() == "" {
+            ConfigManager.setUserId(userId: UUID().uuidString)
+            print("User ID: \(ConfigManager.userId())")
         }
-        return true
+        
+        userNameTextField.text = ConfigManager.userName()
+        passwordTextField.text = ConfigManager.password()
+        userId.text = ConfigManager.userId()
+        certificateFileName.text = ConfigManager.certificateFileName()! + ".p12"
+        heartRateLabel.text = "--"
+        iotEndpointHostname.text = ConfigManager.iotEndpointHostname()
+        iotEndpointPort.text = String(ConfigManager.iotEndpointPort())
+        
+    }   
+    
+    @IBAction func textFieldShouldEndEditing(_ sender: UITextField) {
+        if sender == userNameTextField {
+            ConfigManager.setUserName(userName: userNameTextField.text)
+        } else if sender == passwordTextField {
+            ConfigManager.setPassword(password: passwordTextField.text ?? "")
+        } else if sender == iotEndpointHostname {
+            ConfigManager.setIoTEndpointHostname(hostname: iotEndpointHostname.text ?? "")
+        } else if sender == iotEndpointPort {
+            ConfigManager.setIoTEndpointPort(port: UInt16(iotEndpointPort.text ?? "") ?? 8883)
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

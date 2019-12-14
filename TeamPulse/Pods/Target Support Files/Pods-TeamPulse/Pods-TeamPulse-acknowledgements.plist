@@ -14,23 +14,29 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, with the Amazon Cognito Identity Provider and Amazon Cognito Sync subcomponents being licensed under the Amazon Software License and the AWSLex/Bluefront folder under the AWS Customer Agreement (https://aws.amazon.com/agreement/ ). 
+			<string>Public Domain License
+
+The CocoaAsyncSocket project is in the public domain.
+
+The original TCP version (AsyncSocket) was created by Dustin Voss in January 2003.
+Updated and maintained by Deusty LLC and the Apple development community.
 </string>
 			<key>License</key>
-			<string>Apache License, Version 2.0</string>
+			<string>public domain</string>
 			<key>Title</key>
-			<string>AWSCore</string>
+			<string>CocoaAsyncSocket</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, with the Amazon Cognito Identity Provider and Amazon Cognito Sync subcomponents being licensed under the Amazon Software License and the AWSLex/Bluefront folder under the AWS Customer Agreement (https://aws.amazon.com/agreement/ ). 
+			<string>This project is dual licensed under the Eclipse Public License 1.0 and the
+Eclipse Distribution License 1.0 as described in the epl-v10 and edl-v10 files.
 </string>
 			<key>License</key>
-			<string>Apache License, Version 2.0</string>
+			<string>MIT</string>
 			<key>Title</key>
-			<string>AWSIoT</string>
+			<string>CocoaMQTT</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

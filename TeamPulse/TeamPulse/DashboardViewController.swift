@@ -24,9 +24,7 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource {
         super.viewWillAppear(animated)
         
         if !MessageManager.sharedInstance.isConnected() {
-            if MessageManager.sharedInstance.initialize() {
-                MessageManager.sharedInstance.connectToMQTT()
-            }
+            MessageManager.sharedInstance.connect()
         }
     }
     

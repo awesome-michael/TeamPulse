@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,13 +24,14 @@
 		BE64AB342213597600651F90 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB332213597600651F90 /* InterfaceController.swift */; };
 		BE64AB362213597600651F90 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB352213597600651F90 /* ExtensionDelegate.swift */; };
 		BE64AB382213597600651F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE64AB372213597600651F90 /* Assets.xcassets */; };
-		BE64AB3C2213597600651F90 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BE64AB222213597500651F90 /* Watch.app */; };
+		BE64AB3C2213597600651F90 /* PulseMonitor.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BE64AB222213597500651F90 /* PulseMonitor.app */; };
 		BE64AB472213598D00651F90 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE64AB462213598D00651F90 /* HealthKit.framework */; };
 		BE64AB482213599300651F90 /* HealthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB1E2213532E00651F90 /* HealthDataManager.swift */; };
 		BE64AB4A22135AA300651F90 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB4922135AA300651F90 /* SessionHandler.swift */; };
 		BE64AB4C221362B000651F90 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB4B221362B000651F90 /* MessageManager.swift */; };
 		BE64AB4E2213A4AD00651F90 /* HeartRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB4D2213A4AD00651F90 /* HeartRateModel.swift */; };
 		BE64AB502213AC7100651F90 /* HeartRateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64AB4F2213AC7100651F90 /* HeartRateCollectionViewCell.swift */; };
+		C0707D5C23A7AC2700837DB4 /* pulse.p12 in Resources */ = {isa = PBXBuildFile; fileRef = C0707D5B23A79DBC00837DB4 /* pulse.p12 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				BE64AB3C2213597600651F90 /* Watch.app in Embed Watch Content */,
+				BE64AB3C2213597600651F90 /* PulseMonitor.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +79,7 @@
 /* Begin PBXFileReference section */
 		9B9C97F456209A28A4C486D5 /* Pods-TeamPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamPulse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamPulse/Pods-TeamPulse.debug.xcconfig"; sourceTree = "<group>"; };
 		BE5235E10CFAE14C8F7487BC /* Pods-TeamPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamPulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamPulse/Pods-TeamPulse.release.xcconfig"; sourceTree = "<group>"; };
-		BE64AAFF2213211D00651F90 /* TeamPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE64AAFF2213211D00651F90 /* PulseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE64AB022213211D00651F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE64AB042213211D00651F90 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BE64AB072213211D00651F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,7 +92,7 @@
 		BE64AB1B2213531100651F90 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BE64AB1D2213531100651F90 /* TeamPulse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeamPulse.entitlements; sourceTree = "<group>"; };
 		BE64AB1E2213532E00651F90 /* HealthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataManager.swift; sourceTree = "<group>"; };
-		BE64AB222213597500651F90 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE64AB222213597500651F90 /* PulseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE64AB252213597500651F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		BE64AB272213597600651F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE64AB292213597600651F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		BE64AB4B221362B000651F90 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		BE64AB4D2213A4AD00651F90 /* HeartRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateModel.swift; sourceTree = "<group>"; };
 		BE64AB4F2213AC7100651F90 /* HeartRateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0707D5B23A79DBC00837DB4 /* pulse.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pulse.p12; sourceTree = "<group>"; };
 		F925DB349FCD558761AFF9D6 /* Pods_TeamPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,8 +163,8 @@
 		BE64AB002213211D00651F90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE64AAFF2213211D00651F90 /* TeamPulse.app */,
-				BE64AB222213597500651F90 /* Watch.app */,
+				BE64AAFF2213211D00651F90 /* PulseMonitor.app */,
+				BE64AB222213597500651F90 /* PulseMonitor.app */,
 				BE64AB2E2213597600651F90 /* Watch Extension.appex */,
 			);
 			name = Products;
@@ -171,6 +173,7 @@
 		BE64AB012213211D00651F90 /* TeamPulse */ = {
 			isa = PBXGroup;
 			children = (
+				C0707D5B23A79DBC00837DB4 /* pulse.p12 */,
 				BE64AB1D2213531100651F90 /* TeamPulse.entitlements */,
 				BE64AB022213211D00651F90 /* AppDelegate.swift */,
 				BE64AB042213211D00651F90 /* DashboardViewController.swift */,
@@ -243,7 +246,7 @@
 			);
 			name = TeamPulse;
 			productName = TeamPulse;
-			productReference = BE64AAFF2213211D00651F90 /* TeamPulse.app */;
+			productReference = BE64AAFF2213211D00651F90 /* PulseMonitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BE64AB212213597500651F90 /* Watch */ = {
@@ -261,7 +264,7 @@
 			);
 			name = Watch;
 			productName = Watch;
-			productReference = BE64AB222213597500651F90 /* Watch.app */;
+			productReference = BE64AB222213597500651F90 /* PulseMonitor.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		BE64AB2D2213597600651F90 /* Watch Extension */ = {
@@ -342,6 +345,7 @@
 				BE64AB0D2213211D00651F90 /* LaunchScreen.storyboard in Resources */,
 				BE64AB0A2213211D00651F90 /* Assets.xcassets in Resources */,
 				BE64AB082213211D00651F90 /* Main.storyboard in Resources */,
+				C0707D5C23A7AC2700837DB4 /* pulse.p12 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,15 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeamPulse/Pods-TeamPulse-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamPulse/Pods-TeamPulse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamPulse/Pods-TeamPulse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -599,14 +600,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TeamPulse/TeamPulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				INFOPLIST_FILE = TeamPulse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor";
+				PRODUCT_NAME = PulseMonitor;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -619,14 +620,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TeamPulse/TeamPulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				INFOPLIST_FILE = TeamPulse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor";
+				PRODUCT_NAME = PulseMonitor;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -638,14 +639,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -661,14 +662,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -684,11 +685,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor.watchkitapp";
+				PRODUCT_NAME = PulseMonitor;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -703,11 +704,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 92VW9KVNP2;
+				DEVELOPMENT_TEAM = 98C45TS5UN;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamwelbes.TeamPulse.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.awesome-technologies.PulseMonitor.watchkitapp";
+				PRODUCT_NAME = PulseMonitor;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
